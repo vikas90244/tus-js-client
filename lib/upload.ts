@@ -348,7 +348,7 @@ export class BaseUpload {
           // Wait until every partial upload has an upload URL, so we can add
           // them to the URL storage.
           onUploadUrlAvailable: async () => {
-            // @ts-expect-error We know that _parallelUploadUrls is defined
+            // @ts-expect-error We know that _parallelUploadUrls is define
             this._parallelUploadUrls[index] = upload.url
             // Test if all uploads have received an URL
             // @ts-expect-error We know that _parallelUploadUrls is defined
